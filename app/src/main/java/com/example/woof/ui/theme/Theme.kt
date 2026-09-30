@@ -118,7 +118,7 @@ fun WoofTheme(
  * light or dark depending on whether the [darkTheme] is enabled or not.
  */
 private fun setUpEdgeToEdge(view: View, darkTheme: Boolean) {
-    val window = (view.context as Activity).window
+    val window = (view.context as Activity
     WindowCompat.setDecorFitsSystemWindows(window, false)
     window.statusBarColor = Color.Transparent.toArgb()
     val navigationBarColor = when {
